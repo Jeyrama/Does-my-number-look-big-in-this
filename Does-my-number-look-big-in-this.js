@@ -24,3 +24,5 @@ function narcissistic( value ) {
     return p + Math.pow(c, ('' + value).length)
     }, 0) == value;
 }
+
+// or
