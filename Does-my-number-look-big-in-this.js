@@ -15,3 +15,6 @@ upon whether the given number is a Narcissistic number in base 10.
 Error checking for text strings or other invalid inputs is not required, 
 only valid positive non-zero integers will be passed into the function.
 */
+
+
+// Solution
