@@ -26,3 +26,17 @@ function narcissistic( value ) {
 }
 
 // or
+
+function narcissistic( value ) {
+  var remaining = value,
+      digits = [],
+      solution = 0;
+  while (remaining > 0) {
+    digits.push(remaining % 10);
+    remaining = Math.floor(remaining / 10);
+  }
+  
+  return value == digits.reduce(function(p,n) {
+    return p + Math.pow(n,digits.length);
+  },0);
+}
